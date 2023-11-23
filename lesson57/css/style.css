@@ -1,0 +1,41 @@
+body {
+    color: #020202;
+    font-size: 120px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    text-align: center;
+}
+
+
+
+.title {
+    position: relative;
+}
+
+.title::before,
+.title::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.title::before {
+    left: -150px;
+    background: rgb(58, 138, 131);
+}
+
+.title::after {
+    right: -150px;
+    background: rgb(149, 109, 194);
+}
